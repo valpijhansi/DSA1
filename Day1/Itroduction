@@ -1,0 +1,20 @@
+Importance of Java :
+1.Java is one of the most programming languages used to create web applications and platforms.
+2.It was designed for flexibility,allowing developers to write code that would run on any machine regardless of architecture or platform.
+3.Both Platform Independent and Multithreading these two features makes java is one of the popular programming language.
+
+
+Java use both compiler and interpreter:
+1.Java programming language uses both the compiler and interpreter.
+2.Because the source programming code is first transformed into binary programming code.
+3.That binary code is run by the JVM,which usually a software-based interpreter.
+
+Java Compiler:
+1.It scans the entire source code before highlighting error.
+2.More memory is consumed during the bytecode creation process.
+3.It checks to see if there are any typographical or syntactical errors to ensure that the program is correct.
+
+
+Java Interpreter:
+1.Java is compatible with every operating system and the java interpreter converts bytecode into machine code.
+2.It translates language one line by one line.
