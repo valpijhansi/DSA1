@@ -1,0 +1,28 @@
+Ways to Approach a problem:
+1.Reading the problem.
+2.Analyzing/Understanding the problem.
+3.Think of solution.
+4.Pen down the Solution.
+5.Write the code.
+
+Ways to pen down the solution:
+There are 3 ways to pen down the solution. They are:
+1.Flowchart
+2.Algorithm
+3.psudeo code
+
+What is an Algorithm ?
+An algorithm is a step by step process of a problem.
+
+
+What is Trade-Off in Programing Language ?
+* A trade-off is a situation where one thing increases and another thing decreases
+* It is a way to solve a problem in:
+  1.Either in less time and by using more space,or
+  2.In very little space by spending a long amount of time
+
+* Types of space-Time Trade-off
+ 1.Compressed or Uncompressed data
+ 2.Re-Rendering or Stored images
+ 3.Smaller code or loop unrolling
+ 4.Lookup tables or Recalculation
