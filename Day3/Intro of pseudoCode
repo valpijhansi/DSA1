@@ -1,0 +1,17 @@
+PseudoCode:
+ * It is a detailed yet readable description of what a computer program or algorithm should do.
+ * In simple it is a step-by-step description of an algorithm.
+ * It is the intermediate state between an idea and it's implementation in a high level language.
+
+Need of PseudoCode:
+ * It is an important part of designing an algorithm.
+ * It helps the programmer in planning the solution to the problem as well as the reader in understanding the approach to the problem.
+
+How to write a PseudoCode....
+* Organize the sequence of tasks and write the pseudocode accordingly.
+* At first establish the main goal or the aim
+* Use standard programming structures
+* Indent the statements if-else,for,while loops as they are intended in a program
+* Use appropriate naming conventions
+* reserved commands or keywords must be in capital letters
+
