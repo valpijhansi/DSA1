@@ -1,0 +1,26 @@
+What is DSA?
+* DSA is defined as a combination of two seperate yet interrelated topics Data Structure and Algorithms.
+
+
+What is Data Structure?
+* A data Structure is defined as a particular way of storing and organizing data in our devices to use the   data efficiently and effectively.
+* The Main idea behind using data structures is to minimize the time and space complexities.
+* an efficient data structure takes minimum memory space and requires minimum time to execute the data.
+
+Advantages of Data Structure:
+* It is a good solution for storing data on framework
+* It make it easier for us to handle data
+* Data structure are critical for planning computations
+
+What is Collection frameworks?
+* The Collection framework contains an interface named an iterable interface which provides the iterator to iterate through all the collection.
+* This interface is extended by the main collection interface which acts as a root for the collection framework
+
+Use of Collection framework:
+* It enables user to perform various data manipulation operations like storing data,searching,sorting,insertion,deletion and updating of data on the group of elements.
+
+Advantages of collection framework:
+* It reduces Programming effort
+* Increases program speed and quality
+* Allows interoperability among unrelated APIs
+* Fosters software reuse
