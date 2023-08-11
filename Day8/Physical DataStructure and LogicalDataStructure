@@ -1,0 +1,63 @@
+Physical Data Structure:
+
+* The Array and LinkedList are the two physical data structures.
+* We can have more physical data structures by taking the combination of these two data structures i.e. array and linked list.
+
+Why we are calling array and linked list as physical data structures?
+
+* We call array and linked list as the physical data structure because these two data structures decide or define how the memory is organized or how the memory is allocated.
+
+
+Array:
+
+* The Array is directly supported by programming languages such as C, C++, C#, Java, etc.
+* The Array is a collection of contiguous memory locations i.e. all these locations are side by side.
+* If we have an array for seven integers, then all these places for seven integers are together.
+* They are in one place. The array will have a fixed size. Once it is created with some size, then that size cannot be increased or decreased.
+* So, it is a fixed size i.e. the size of the array is static.
+
+Where the array can be created?
+
+* The array can be created either inside the stack or it can be created inside the heap.
+* We can have a pointer, pointing to the array created on the heap.
+* So, the array can be created either inside the stack or inside the heap.
+
+When to use the array data structure?
+
+* We need to use the array data structure when we are sure what is the maximum number of elements that we are going to store.
+* That means if we know the length of the list then we need to go for the array data structure.
+
+
+
+Linked list:
+
+* The Linked List data structure is a completely dynamic data structure.
+* It is a collection of nodes where each node contains data and a link to the next node.
+* The length of the linked list can grow and reduce dynamically. So, it is having a variable length.
+* As per our requirement, you can go on and adding more and more nodes and add more elements or you can reduce the size.
+
+Where the linked list can be created?
+
+* The linked list is always created in the heap i.e. collection of nodes is created always in heap and can be accessed using a pointer and that pointer is created inside the stack.
+* So, a linked list is always created in the heap.
+
+
+
+
+When to use the Linked List data structure?
+
+* We need to go with the linked list data structure when we are not sure what is the maximum number of elements that we are going to store.
+* That means if we don’t know the length of the list then we need to go for the linked list data structure.
+
+
+
+
+Logical Data Structure:
+
+The following is a list of logical data structures.
+
+    Stack
+    Queue
+    Tree
+    Graph
+    Hash Table

@@ -1,0 +1,18 @@
+Static Array:
+     An array that is declared with the static keyword is known as static array.
+     It allocates memory at compile-time whose size is fixed. We cannot alter the static array.
+
+
+The syntax to declare a static array is:
+
+ <data type> <variable name> []={<data1>,<data2>,.....<dataN>};
+
+Advantages of Static Array
+
+   * It has efficient execution time.
+   * The lifetime of static allocation is the entire run time of the program.
+
+Disadvantages of Static Array
+
+   * In case more static data space is declared than needed, there is waste of space.
+   * In case less static space is declared than needed, then it becomes impossible to expand this fixed size during run time.
