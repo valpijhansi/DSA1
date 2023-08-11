@@ -1,0 +1,24 @@
+ need  of hard disks :
+
+   * Hard disks store large amount data.
+   * Even if power off the data will not be removed.
+   * for example, if you have million lines of code then it will be hard to type entire code.this type of purposes we need harddisk.
+   * It works based on Magnetic Technology.
+
+  Importance of RAM:
+
+   * It works based on semiconductor technology that means it  do the work very fast.CPu also works based on semiconductor technology.
+   * but it very cost.
+   * It does not store data permanently.whenever power off that time data will be removed.
+   * Hard disk transfer the instructions to cpu it takes so much time that time we are using RAM because it sends instruction to cpu very fastly.because it works based on semiconductor that's why it fast.
+
+Why we cannot store entire data in RAM:
+
+     * Because RAM does not store large amount of data that means does not have that much of space.
+     * RAM cost is very high.
+     * because RAM does not store the data permanently.
+
+Reason for computers understand binary language:
+
+    * Because cpu made of transistors,transistors support or have only 0's and 1's.
+

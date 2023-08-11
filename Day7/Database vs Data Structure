@@ -1,0 +1,14 @@
+                                        Database vs DataStructure
+
+            Database	                                                                                     Data Structure
+      It is an organized collection of data.	                                                It is a special format for storing data to serve a particular purpose.
+      It is used to access the data and manage it easily.	                                    It is used for efficiency and to reduce the complexities of the program.
+      Structured query language (SQL) is used to perform operations on the data in a database.  Programming languages like C, C++, Java, Python are used to perform operations using data Structures.
+      DataBase Management System (DBMS) is used to manage the database.
+
+      It is a Non-volatile memory.	                                                             It is a volatile memory.
+     Relational database, NOSQL database, Centralized database,                                  Linear data structure and non-linear data structure are the types of data structures.
+     Hierarchical database are some types of databases.
+     Example : MySQL, Oracle, MongoDB, Sybase etc.	                                             Example : Array, Linked List, Stack, Queue, Tree, Graph.
+     Store Data in permanent Memory	                                                             Store Data in Temporary Memory
+
