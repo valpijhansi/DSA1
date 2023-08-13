@@ -1,0 +1,7 @@
+* Time complexity is not measured in seconds when analyzing algorithms and data structures because it aims to provide a more abstract and generalized way of understanding how an algorithm's performance scales with input size.
+* Measuring in seconds could be influenced by factors like hardware, programming language, and specific implementations, making it less consistent and more dependent on external factors.
+
+* Time complexity focuses on counting the number of basic operations an algorithm performs as a function of its input size.
+* This allows for a better understanding of how an algorithm's efficiency changes with different inputs,
+* without being tied to specific hardware or programming details.
+* It provides a high-level comparison of algorithms and helps programmers choose the most suitable one for their needs regardless of the environment in which it will be executed.
