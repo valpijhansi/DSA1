@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class ArrayOperations {
    private int items[];
     public ArrayOperations(int size){
@@ -63,9 +65,61 @@ public class ArrayOperations {
     int size(){
         return count;
     }
+    int x = 0;
+    boolean hasNext(){
+
+        return x!=count;
+    }
+    int next(){
+        return items[x++];
+    }
+    void clear(){
+        count = 0;
+    }
+
+    int[] toArray(){
+        int tempItem[] = new int[count];
+        for(int i=0;i<count;i++){
+            tempItem[i] = items[i];
+        }
+        return tempItem;
+    }
+
+    public void trimSize(){
+        int[] newArray = new int[count];
+        for(int i=0;i<count;i++){
+            newArray[i] = items[i];
+            items = newArray;
+        }
+    }
+    void subList(int start,int end){
+        if(start<0 || start>=count)
+            throw  new IllegalArgumentException();
+        else if(!(end>=start && end<=count))
+            throw new IllegalArgumentException();
+        if(start==end){
+            System.out.println("[]");
+            return;
+        }
+        int temp[] = new int[end-start];
+        for (int i = start; i < end ; i++) {
+            temp[i] = items[i];
+
+        }
+    }
+
     void print(){
         for(int i=0;i<items.length;i++){
             System.out.println(items[i]);
         }
+    }
+
+    @Override
+    public String toString() {
+        return "ArrayOperations{" +
+                "items=" + Arrays.toString(items) +
+                ", count=" + count +
+                ", x=" + x +
+                '}';
     }
 }
