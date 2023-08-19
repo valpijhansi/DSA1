@@ -114,6 +114,21 @@ public class ArrayOperations {
         }
     }
 
+    void sort() {
+
+        int items1[] = Arrays.copyOf(items,count);
+        Arrays.sort(items1);
+
+        for(int i=0;i<count;i++)
+            items[i]=items1[i];
+
+    }
+    boolean isEmpty() {
+        return count == 0;
+    }
+
+
+
     @Override
     public String toString() {
         return "ArrayOperations{" +

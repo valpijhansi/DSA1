@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        ArrayOperations a = new ArrayOperations(3);
+        ArrayOperations a = new ArrayOperations(6);
         a.insert(12);
         a.insert(20);
         a.insert(45);
@@ -18,7 +18,11 @@ public class Main {
 
         a.print();
         a.trimSize();
-        a.subList(1,3);
+        //a.subList(1,3);
+
+        a.sort();
+        System.out.println(a);
+        System.out.println(a.isEmpty());
 
     }
 }
