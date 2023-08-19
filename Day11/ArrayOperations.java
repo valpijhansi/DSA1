@@ -110,7 +110,7 @@ public class ArrayOperations {
 
     void print(){
         for(int i=0;i<items.length;i++){
-            System.out.println(items[i]);
+            System.out.print(items[i]);
         }
     }
 
@@ -122,14 +122,75 @@ public class ArrayOperations {
         for(int i=0;i<count;i++)
             items[i]=items1[i];
 
+
     }
     boolean isEmpty() {
         return count == 0;
     }
 
+   public void middleElement(){
+        if(items.length%2==0){
+            System.out.println("Middle elements are:");
+            int m1 = items[items.length/2-1];
+            System.out.println(m1);
+            int m2 = items[items.length/2];
+            System.out.println(m2);
+        }
+        else {
+            System.out.println("Middle element is:");
+            int middleElement = items[items.length/2];
+            System.out.println(middleElement);
+        }
+
+   }
+
+   public void removeIfGreater(){
+       if(items.length>4) {
+           int[] newArray = new int[items.length-4]; // Create a new array with a smaller length
+           int newIndex = 0;
+
+           for (int i = 0; i < items.length; i++) {
+               if (i < 4) {
+                   newArray[newIndex] = items[i];
+                   newIndex++;
+               }
+           }
+           items = newArray;
+           for(var N:newArray)
+               System.out.print(N+" ");
 
 
-    @Override
+       }
+       System.out.println();
+    }
+     void reverse() {
+        for (int i = items.length-1; i >= 0; i--) {
+            System.out.print(items[i] + " ");
+        }
+         System.out.println();
+
+    }
+    public  void maxElement(){
+        int max = 0;
+        for (int i = 0; i < items.length; i++) {
+            if(items[i]>max)
+                max = items[i];
+
+        }
+        System.out.println(max);
+    }
+
+    public void MinElement(){
+        int min = 0;
+        for (int i = 0; i < items.length; i++) {
+            if(items[i]<min)
+                min = items[i];
+
+        }
+        System.out.println(min);
+
+    }
+ @Override
     public String toString() {
         return "ArrayOperations{" +
                 "items=" + Arrays.toString(items) +
