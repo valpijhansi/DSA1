@@ -36,6 +36,7 @@ public class Main {
         a.reverse();
         a.maxElement();
         a.MinElement();
+        a.ensureCapacity(5);
 
 
 

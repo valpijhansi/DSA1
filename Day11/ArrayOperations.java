@@ -6,6 +6,22 @@ public class ArrayOperations {
         items = new int[size];
     }
      private int count = 0;
+
+    public ArrayOperations(){
+        items = new int[20];
+    }
+
+    public void ensureCapacity(int minElements){
+        int i = items.length;
+        while(i<minElements){
+            i *= 2;
+            items = new int[i];
+        }
+        for(var X:items)
+        System.out.print(X+" ");
+    }
+
+
     void insert(int value) {
         //if array is full, resize the array
         if (items.length == count) {
@@ -17,6 +33,8 @@ public class ArrayOperations {
         }
         items[count++] = value;
     }
+
+
     void removeAt(int index){
         if(index<0 || index>=count){
             throw  new IllegalArgumentException();
@@ -27,6 +45,8 @@ public class ArrayOperations {
         }
         count--;
     }
+
+
     int indexOf(int value){
         for (int i = 0; i < count; i++) {
             if(items[i]==value)
@@ -37,6 +57,7 @@ public class ArrayOperations {
     }
 
 
+
     boolean contains(int value){
         for(int i=0;i<count;i++){
             if (items[i]==value)
@@ -44,6 +65,8 @@ public class ArrayOperations {
         }
         return false;
     }
+
+
     int firstIndexOf(int value){
         for(int i=0;i<count;i++){
             if(items[i]==value)
@@ -52,6 +75,7 @@ public class ArrayOperations {
         }
         return -1;
     }
+
 
 
     int lastIndexOf(int value){
@@ -73,9 +97,11 @@ public class ArrayOperations {
     int next(){
         return items[x++];
     }
+
     void clear(){
         count = 0;
     }
+
 
     int[] toArray(){
         int tempItem[] = new int[count];
@@ -84,6 +110,7 @@ public class ArrayOperations {
         }
         return tempItem;
     }
+
 
     public void trimSize(){
         int[] newArray = new int[count];
@@ -108,11 +135,13 @@ public class ArrayOperations {
         }
     }
 
+
     void print(){
         for(int i=0;i<items.length;i++){
             System.out.print(items[i]);
         }
     }
+
 
     void sort() {
 
@@ -124,11 +153,13 @@ public class ArrayOperations {
 
 
     }
+
     boolean isEmpty() {
         return count == 0;
     }
 
-   public void middleElement(){
+
+    public void middleElement(){
         if(items.length%2==0){
             System.out.println("Middle elements are:");
             int m1 = items[items.length/2-1];
@@ -163,13 +194,15 @@ public class ArrayOperations {
        }
        System.out.println();
     }
-     void reverse() {
+
+    void reverse() {
         for (int i = items.length-1; i >= 0; i--) {
             System.out.print(items[i] + " ");
         }
          System.out.println();
 
     }
+
     public  void maxElement(){
         int max = 0;
         for (int i = 0; i < items.length; i++) {
@@ -179,6 +212,7 @@ public class ArrayOperations {
         }
         System.out.println(max);
     }
+
 
     public void MinElement(){
         int min = 0;
