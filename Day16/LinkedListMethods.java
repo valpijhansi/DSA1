@@ -188,6 +188,34 @@ import java.util.NoSuchElementException;
          }
           return false;
       }
+   public void addAtIndex(int index,int value){
+         if(index<0|| index>size())
+             throw new IllegalArgumentException();
+         Node temp = new Node(value);
+       if (index == 0) {
+           temp.next = head;
+           head = temp;
+       } else {
+           Node current = head;
+           for (int i = 0; i < index - 1; i++) {
+               current = current.next;
+           }
+           temp.next = current.next;
+           current.next = temp;
+       }
+
+   }
+
+   public void print(){
+         Node current = head;
+         while(current!=null) {
+             System.out.print(current.value + " ");
+             current = current.next;
+         }
+       System.out.println();
+   }
+
+
 
 
  }
