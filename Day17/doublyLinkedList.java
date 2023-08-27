@@ -15,7 +15,7 @@ public class doublyLinkedList {
 
     }
 
-    public void add(int value){
+    public void addLast(int value){
         Node temp = new Node(value);
         var previous = head;
         if(isEmpty())
@@ -31,6 +31,22 @@ public class doublyLinkedList {
         return head == null;
 
     }
+
+    public void addFirst(int value){
+        Node item = new Node(value);
+        item.next = head;
+        item.previous = null;
+        if(isEmpty())
+            head=tail=item;
+        else
+        if (head != null) {
+            head.previous = item;
+        }
+
+        head = item;
+    }
+
+
 
    public void print(){
         var current = head;
