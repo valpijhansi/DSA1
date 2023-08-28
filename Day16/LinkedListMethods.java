@@ -205,6 +205,18 @@ import java.util.NoSuchElementException;
        }
 
    }
+   int binToDec() {
+       int res = 0;
+       var current = head;
+       while (current != null) {
+           res *= 2;
+           res += current.value;
+           current = current.next;
+       }
+       return res;
+   }
+
+
 
    public void print(){
          Node current = head;
