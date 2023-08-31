@@ -80,4 +80,32 @@ public class cirularLinkedListMethods {
         System.out.println();
     }
 
+    public void removeFirst(){
+        if(head==null)
+            throw new IllegalStateException();
+        else if(head ==head.next){
+            var current  = head.next;
+            while (current.next!=head){
+                current = current.next;
+            }
+            current.next = head.next;
+            head.next = null;
+            head = current.next;
+        }
+    }
+    void removeFirstOptimized(){
+        if(head==null) {
+            throw new IllegalStateException();
+        } else if(head==head.next){
+            head=null;
+
+
+            }else if (head.next!=head){
+            head.data = head.next.data;
+            var backup = head.next.next;
+            head.next.next  = null;
+            head.next = backup;
+        }
+    }
+
 }

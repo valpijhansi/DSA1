@@ -12,5 +12,12 @@ public class Main {
         cl.print();
         cl.addLastOptimized(60);
         cl.print();
+        cl.addLast(12);
+        cl.addLast(15);
+        cl.addFirst(25);
+        cl.print();
+        cl.removeFirstOptimized();
+        cl.print();
+
     }
 }
