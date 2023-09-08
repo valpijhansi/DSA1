@@ -50,17 +50,45 @@ public class Linkedlist {
     public void addUpNext(int value){
         var node = new Node(value);
         if(head==null){
-            head = node;
-        }else {
-            var current = head;
-            if(value> current.value){
-                addNext(value);
+            addNext(value);
+            return;
+        }
+        var current = head;
+        while(current!=null){
+            if(current.value>value){
+                if(current.up==null){
+                    current.up = new Node(value);
+                    return;
+                }
+                current = current.up;
             }else {
-                addUp(value);
+                if(current.next==null){
+                    current.next = new Node(value);
+                    return;
+                }
+                current = current.next;
             }
         }
 
     }
+
+    public boolean search(int key){
+        if(head==null){
+            throw new IllegalStateException();
+        }else{
+            var current = head;
+            while(current!=null){
+                if(current.value==key)
+                    return true;
+
+
+            }
+            current = current.next;
+        }
+        return false;
+    }
+
+    
 
 
 }
